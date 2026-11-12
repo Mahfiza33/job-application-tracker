@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f8;
+  color: #243047;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #5746af;
+}
+
+form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #b8bec9;
+}
+
+button {
+  background-color: #5746af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #403285;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+li button {
+  margin-left: 12px;
+  background-color: #b42338;
+}
+/* Keep padding inside each element's width. */
+* {
+  box-sizing: border-box;
+}
+
+/* Make the search field fill the available space. */
+label[for="search"] {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Arrange application details and controls. */
+li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+li p {
+  width: 100%;
+  margin: 0 0 8px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+li select {
+  flex: 1;
+  min-width: 140px;
+}
+
+li button {
+  margin-left: 0;
+}
+
+li button:hover {
+  background-color: #8f1c2d;
+}
+
+/* Give keyboard users a visible focus indicator. */
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid #5746af;
+  outline-offset: 3px;
+}
+select.applied {
+  background-color: #e8efff;
+  color: #234a91;
+}
+
+select.interview {
+  background-color: #fff3d6;
+  color: #805400;
+}
+
+select.offer {
+  background-color: #e0f5e9;
+  color: #17643b;
+}
+
+select.rejected {
+  background-color: #fde8ec;
+  color: #9e233c;
+}
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #b8bec9;
+  border-radius: 6px;
+  font: inherit;
+  resize: vertical;
+}
+
+textarea:focus-visible {
+  outline: 3px solid #5746af;
+  outline-offset: 3px;
+}

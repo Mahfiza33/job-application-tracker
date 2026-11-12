@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Job Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Job Tracker</h1>
+  <p>Keep track of your job applications.</p>
+
+  <form>
+    <label for="company">Company name</label>
+    <input id="company" type="text" required>
+
+    <label for="job-title">Job title</label>
+    <input id="job-title" type="text" required>
+
+    <label for="status">Application status</label>
+    <select id="status">
+      <option>Applied</option>
+      <option>Interview</option>
+      <option>Offer</option>
+      <option>Rejected</option>
+    </select>
+<label for="application-date">Date applied</label>
+<input id="application-date" type="date" required>
+    <button type="submit">Add Application</button>
+  </form>
+  <h2>My Applications</h2>
+  <p id="application-count">Total applications: 0</p>
+  <label for="search">Search applications</label>
+<input id="search" type="search" placeholder="Company or job title">
+<label for="status-filter">Filter by status</label>
+<select id="status-filter">
+  <option value="">All statuses</option>
+  <option value="Applied">Applied</option>
+  <option value="Interview">Interview</option>
+  <option value="Offer">Offer</option>
+  <option value="Rejected">Rejected</option>
+</select> 
+<ul id="application-list"></ul>
+<p id="empty-message" hidden>No applications found.</p>
+  <script src="script.js"></script>
+</body>
+</html>
